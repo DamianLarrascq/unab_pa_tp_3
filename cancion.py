@@ -1,16 +1,18 @@
 class Cancion:
     def __init__(self, titulo, autor):
-        self.titulo = titulo
-        self.autor = autor
+        self._titulo = titulo
+        self._autor = autor
 
+    @property
     def get_titulo(self):
-        return self.titulo
+        return self._titulo
 
+    @property
     def get_autor(self):
-        return self.autor
+        return self._autor
 
     def set_titulo(self, titulo: str):
-        self.titulo = titulo
+        self._titulo = titulo
 
     def set_autor(self, autor: str):
-        self.autor = autor
+        self._autor = autor
